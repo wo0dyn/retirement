@@ -1,0 +1,36 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>wo0dyn's Retirement Countdown</title>
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.countdown.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Special+Elite">
+<style type="text/css">
+* { font-family: 'Special Elite', cursive }
+body { text-align: center; }
+h1 { font-size: 48px; font-weight: bold; margin: 2em; }
+#video { clear: both; text-align: center; }
+#countdown {
+    font-size: 60px;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+    background: transparent;
+    border: none;
+    margin-bottom: 2em;
+}
+</style>
+
+<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.plugin.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+<script>
+$(function () {
+    const retirementDay = new Date("2046-07-01T17:00:00")
+    $('#countdown').countdown({until: retirementDay})
+});
+</script>
+
+<h1>wodyn's Retirement Countdown</h1>
+<div id="countdown"></div>
+<div id="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HyWajWueH2w?si=NZwQ9JA2NF9P5Kgg&amp;start=66" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
